@@ -15,7 +15,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.9.RELEASE</version>
+		<version>2.3.2.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -31,22 +31,13 @@
 		<spring-security-version>3.1.0</spring-security-version>
 	</properties>
 
-
-	<dependencies>
-	
-		<!-- 
-		dependancy added for tomcat       -->
-		
+	  <dependencies>
 		<dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-jersey</artifactId>
-              <exclusions>
-        <exclusion>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-        </exclusion>
-      </exclusions>
-      </dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-spring-boot-starter</artifactId>
+			<version>4.6.4.Final</version>
+			<scope>runtime</scope>
+		</dependency>
 
 		<!--  added for jboss --> 
 		<dependency>
@@ -55,7 +46,7 @@
           <scope>provided</scope>
       </dependency>
       
-		 <dependency>
+		 <!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			      <exclusions>
@@ -64,7 +55,7 @@
           <artifactId>spring-boot-starter-tomcat</artifactId>
         </exclusion>
       </exclusions>
-		</dependency> 
+		</dependency>  -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-oauth2</artifactId>
