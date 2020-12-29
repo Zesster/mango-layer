@@ -6,7 +6,7 @@
 
 	<groupId>org.zesster</groupId>
 	<artifactId>mango-layer</artifactId>
-	<version>0.0.2-jboss-SNAPSHOT</version>
+	<version>0.0.3-jboss-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>mango-layer</name>
