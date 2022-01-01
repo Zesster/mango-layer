@@ -18,6 +18,14 @@
 		<version>2.3.2.RELEASE</version>
 		<relativePath />
 	</parent>
+	
+	<distributionManagement>
+         	<repository>
+          		<id>github</id>
+          		<name>GitHub OWNER Apache Maven Packages</name>
+          		<url>https://maven.pkg.github.com/zesster/mango-layer</url>
+     	 	</repository>
+	</distributionManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
